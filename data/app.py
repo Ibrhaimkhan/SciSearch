@@ -147,12 +147,45 @@ def generate_ai_answer(question, docs, max_docs=5):
 # -------------------
 # Streamlit UI
 # -------------------
+[theme]
+primarycolor = "#4CAF50"
+base = "light" or "dark"
+baseFontSize = 16
+baseFontWeight = "400"
+chartColor = "#FF4B4B"
+sidebarBorder = true
+font = "sans-serif"
+headingFont = "sans-serif"
+codeFont = "monospace"
+headingFontWeight = "700"
+codeFontWeight = "400"
+linkColor = "#1a73e8"
+textColor = "#262730"
+linkColor = "#1a73e8"
+primaryColor = "#FF4B4B"
+backgroundColor = "#FFFFFF"
+widgetBackgroundColor = "#F0F2F6"
+codeBackgroundColor = "#F6F6F6"
+dataframeHeaderBackgroundColor = "#F0F2F6"
+borderRadius = 8
+borderColor = "#E6E6E6"
+sidebarBorderColor = "#E6E6E6"
+dataframeBorderColor = "#E6E6E6"
+paletteRed = "#FF4B4B"
+paletteOrange = "#FFA500"
+paletteYellow = "#FFD700"
+paletteGreen = "#21BA45"
+paletteBlue = "#1A73E8"
+paletteViolet = "#A259FF"
+ paletteGray = "#808080"
 st.set_page_config(page_title="SciSearch", layout="wide")
 
 # Dark/light toggle
 mode = st.sidebar.radio("Theme Mode:", ["Light", "Dark"])
 if mode == "Dark":
     st.markdown("<style>body{background-color:#222;color:#eee}</style>", unsafe_allow_html=True)
+else:
+    st.markdown("<style>body{background-color:#fff;color:#000}</style>", unsafe_allow_html=True)
 
 # Signup form
 with st.sidebar.form("signup_form"):
