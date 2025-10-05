@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 
+<<<<<<< Updated upstream
 st.write("# SciSearch 🔬")
 st.markdown(":red[This text is red.]")
 st.markdown(":blue-background[This text has a blue background.]")
@@ -19,3 +20,6 @@ st.markdown(
 )
 
 st.button("Click me")
+=======
+st.write("# SciSearch 🔬")
+>>>>>>> Stashed changes
